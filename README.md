@@ -32,9 +32,9 @@ One-time setup on GitHub: **Settings → Pages → Source → GitHub Actions**.
 
 ## Features
 
-- Intro loader (lime curtain with a 0–100% counter), skipped for reduced motion and deep links
-- Hero: letter-by-letter name reveal, clip-path photo reveal with scroll parallax, animated KPI card
-- Skill ticker bands that skew with scroll velocity
+- Preloader that builds a bar chart and trend line with a workflow checklist and 0–100% counter, then lifts away in columns
+- Hero: letter-by-letter name reveal, clip-path photo reveal with scroll parallax
+- Spreadsheet-style skills grid with a formula bar describing the selected skill
 - Scroll-scrubbed About statement (words light up as you read)
 - Skill explorer with a sliding active pill, blur transitions and animated bar charts
 - Experience timeline whose line draws as you scroll
