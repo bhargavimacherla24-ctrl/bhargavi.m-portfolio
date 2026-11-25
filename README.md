@@ -25,8 +25,10 @@ All text lives in `src/data/`, so no component changes are needed for content up
 
 ## Deploy to GitHub Pages
 
-`vite.config.js` uses `base: './'`, so the `dist/` folder works from any path. Build, then publish `dist/`
-(for example with the `gh-pages` package: `npx gh-pages -d dist`).
+Live site: https://hemanth-k11.github.io/m.bhargavi-portfolio/
+
+Every push to `main` builds the site and publishes it through `.github/workflows/deploy.yml`.
+One-time setup on GitHub: **Settings → Pages → Source → GitHub Actions**.
 
 ## Features
 
