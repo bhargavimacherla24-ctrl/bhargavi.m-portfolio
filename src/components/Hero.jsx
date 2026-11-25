@@ -87,7 +87,9 @@ export default function Hero({ ready }) {
               </a>
             </Magnetic>
             <Magnetic>
-              <a className="btn btn-ghost" href="#contact">Get in touch</a>
+              <a className="btn btn-ghost" href={profile.resume.download}>
+                Download resume <span aria-hidden="true">↓</span>
+              </a>
             </Magnetic>
           </motion.div>
           <motion.a href="#about" className="scroll-cue mono" {...show(1.2)} aria-label="Scroll to About">

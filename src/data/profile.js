@@ -6,6 +6,11 @@ export const profile = {
   phone: '+44 7383 256379',
   phoneHref: 'tel:+447383256379',
   github: 'https://github.com/bhargavimacherla24-ctrl',
+  // Hosted on Google Drive; the download link serves Bhargavi-Data-Analyst-resume.pdf as an attachment.
+  resume: {
+    download: 'https://drive.google.com/uc?export=download&id=1mqix1cnMkDaUgs2qQZZE70C-E0-Bzs9E',
+    view: 'https://drive.google.com/file/d/1mqix1cnMkDaUgs2qQZZE70C-E0-Bzs9E/view',
+  },
   lead:
     'My experience brings together reporting, data handling and business support. I use Excel, SQL and Power BI to organise information, check results and make business performance easier to understand.',
   about: [

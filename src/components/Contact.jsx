@@ -49,6 +49,13 @@ export default function Contact() {
             <a href={profile.phoneHref}>{profile.phone}</a>
           </div>
           <div className="contact-row">
+            <span className="mono">Resume</span>
+            <a href={profile.resume.download}>Download PDF ↓</a>
+            <a className="copy-btn mono" href={profile.resume.view} target="_blank" rel="noopener noreferrer">
+              View
+            </a>
+          </div>
+          <div className="contact-row">
             <span className="mono">GitHub</span>
             <a href={profile.github} target="_blank" rel="noopener noreferrer">
               bhargavimacherla24-ctrl ↗

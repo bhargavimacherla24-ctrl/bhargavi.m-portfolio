@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion, useMotionValueEvent, useScroll, useSpring } from 'framer-motion';
 import { EASE } from './motion.jsx';
+import { profile } from '../data/profile.js';
 
 const links = [
   ['about', 'About'],
@@ -51,6 +52,9 @@ export default function Nav({ ready }) {
               </a>
             ))}
           </nav>
+          <a className="nav-resume" href={profile.resume.download}>
+            Resume <span aria-hidden="true">↓</span>
+          </a>
           <a className="nav-cta" href="#contact">
             Let’s talk <span aria-hidden="true">↗</span>
           </a>
@@ -93,6 +97,19 @@ export default function Nav({ ready }) {
                   </motion.a>
                 </span>
               ))}
+              <span className="mask">
+                <motion.a
+                  href={profile.resume.download}
+                  className="mask-inner mobile-resume"
+                  onClick={() => setOpen(false)}
+                  initial={{ y: '110%' }}
+                  animate={{ y: '0%' }}
+                  transition={{ duration: 0.8, delay: 0.25 + links.length * 0.06, ease: EASE }}
+                >
+                  <span className="mono">PDF</span>
+                  Resume ↓
+                </motion.a>
+              </span>
             </nav>
           </motion.div>
         )}
