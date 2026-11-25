@@ -27,8 +27,8 @@ All text lives in `src/data/`, so no component changes are needed for content up
 
 Live site: https://hemanth-k11.github.io/m.bhargavi-portfolio/
 
-Every push to `main` builds the site and publishes it through `.github/workflows/deploy.yml`.
-One-time setup on GitHub: **Settings → Pages → Source → GitHub Actions**.
+Every push to `main` builds the site and publishes `dist/` to the `gh-pages` branch via
+`.github/workflows/deploy.yml`. One-time setup on GitHub: **Settings → Pages → Deploy from a branch → `gh-pages` / root**.
 
 ## Features
 
